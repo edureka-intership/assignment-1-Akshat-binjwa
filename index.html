@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        overflow-x: hidden;
+    }
+
+    header {
+        background-color: #CE0505;
+        padding: 10px 70px;
+        width: 100%;
+        height: 68px;
+    }
+
+    .navbar {
+      font-family: poppins;
+        display: flex;
+        align-items: center;
+        background-color: #CE0505;
+    }
+
+    .logo-div {
+        float: left;
+        width: 25%;
+    }
+    .logo {
+        display: inline-block;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        font-family: poppins;
+        width: 50px;
+        background-color: aliceblue;
+        /* border-radius: 50%; */
+        color: #EB2929;
+        font-size: 33px;
+        font-weight: bold;
+    }
+
+    .nav-btn ul {
+        height: 45px;
+        width: 250px;
+        float: right;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    
+
+    .nav-btn {
+        box-sizing: border-box;
+        color: #FFFFFF;
+        width: 75%;
+        font-size: 16px;
+    }
+
+    .nav-btn li {
+        list-style: none;
+    }
+
+    .login {
+        padding-top: 11px;
+        cursor: pointer;
+    }
+
+    .border-white {
+        cursor: pointer;
+        display: inline-block;
+        padding: 10px;
+        border: 1px solid white;
+    }
+
+    .main-2 {
+        margin: 0px 70px;
+        padding: 20px 0px;
+        width: 85%;
+        height: 800px;
+    }
+
+    .main-heading {
+        flex-wrap: wrap;
+        color: #192F60;
+        width: 514px;
+        height: 51px;
+        font-family: poppins, bold;
+        font-size: 36px;
+        font-weight: bolder;
+    }
+
+    .card {
+        color: #8C96AB;
+        box-shadow: 0px 3px 6px #00000029;
+        width: 25%;
+        height: 665px;
+        padding: 30px;
+        font-size: larger;
+        background-color: #FFFFFF;
+    }
+    .card h3{
+        color: #192F60;
+    }
+    .main {
+        width: 100%;
+        height: 100%;
+        background-color: #FBFBFB;
+        padding-bottom: 25px;
+    }
+
+    .card-right {
+        width: 70%;
+        height: 650px;
+
+    }
+
+    .center-body {
+        display: flex;
+    }
+
+    .right-cards {
+        font-family: poppins;
+        box-sizing: border-box;
+        padding:15px 25px;
+        box-shadow: 0px 3px 6px #00000029;
+        background-color: #FFFFFF;
+        margin-bottom: 35px;
+        margin-left: 100px;
+        width: 90%;
+        height: 268px;
+    }
+
+    .pagination {
+        display: flex;
+        margin-left: 100px;
+        width: 90%;
+        height: 50px;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .pagination ul {
+        width: 350px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pagination-btns {
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        border-radius: 10px;
+        border: 1px solid #8C96AB;
+        background-color: #FFFFFF;
+        list-style: none;
+    }
+    .right-cards img{
+        border-radius: 15%;
+    }
+    .right-cards-upper-portion{
+        height: 60%;
+        width: 95%;
+    }
+    .right-cards-upper-portion span{
+        padding-bottom: 30px;
+    }
+    .pagination button{
+        border: 1px solid #8C96AB;
+        border-radius: 8px;
+        cursor: pointer;
+        margin: 2px 6px;
+        height: 50px;
+        width: 50px;
+
+    }
+    .pagination button:hover{
+        color: white;
+        background-color: #8C96AB;
+    }
+    .big-chill-kakery{
+        color: #192F60;
+        position: absolute;
+        left: 610px;
+        top: 200px;
+    }
+    .fort{
+        position: absolute;
+        top: 246px;
+        color: #192F60;
+        left: 612px;
+    }
+    .address{
+        position: absolute;
+        top: 275px;
+        color: #636F88;
+        left: 612px;
+    }
+    .cusin-cost{
+        color: #636F88;
+        position: relative;
+        top: 20px;
+        left: 5px;
+    }
+    .cusin-cost2{
+        position: relative;
+        color: #636F88;
+        top: 28px;
+        left: 5px;
+    }
+    .bake-shop{
+        position: absolute;
+        top: 502px;
+        left: 612px;
+        color: #192F60;
+    }
+    .fort2{
+        position: absolute;
+        top: 550px;
+        left: 615px;
+        color:#192F60;
+    }
+    .address2{
+        position: absolute;
+        top: 580px;
+        left: 615px;
+        color: #636F88;
+    }
+    .bakery-cost{
+        color: #192F60;
+        position: absolute;
+        top: 355px;
+        left: 675px;
+    }
+    .bakery-cost2{
+        color: #192F60;
+        position: absolute;
+        left: 680px;
+        top: 666px;
+    }
+    .right-cards h2{
+        font-weight: bolder;
+    }
+</style>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo-div">
+                <div class="logo">
+                    e!
+                </div>
+            </div>
+            <div class="nav-btn">
+                <ul>
+                    <div class="login"> Login</div>
+                    <li class="border-white">Create an account</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <main class="main-2">
+            <div class="main-heading">
+                Breakfast Places in Mumbai
+            </div><BR></BR>
+            <div class="center-body">
+                <div class="card">
+                    <h3> FILTERS </h3> <br>
+                    <form>
+                        <label> Select Location</label><BR>
+                        <select>
+                            <option default >Select Location</option>
+                            <option> ram nagar</option>
+                            <option> august kranti marg</option>
+                            <option> juhu chopati </option>
+                            <option> service road </option>
+                        </select>
+                        <BR><br>
+        
+                        <h3>Cuisine</h3><BR>
+                        <input type="checkbox"> North Indian <br>
+                        <input type="checkbox"> South Indian <br>
+                        <input type="checkbox"> Chinese <br>
+                        <input type="checkbox"> Fast Food <br>
+                        <input type="checkbox"> Street Food <br>
+                        <br>
+        
+                        <h3>Cost For Two </h3>  <br> 
+                        <input type="radio" name="radio"> Less than '500 <br>
+                        <input type="radio" name="radio"> '500 to '1000 <br>
+                        <input type="radio" name="radio"> '1000 to '1500 <br>
+                        <input type="radio" name="radio"> '1500 t0 '2000 <br>
+                        <input type="radio" name="radio"> '2000+ <BR> <br>
+        
+                        <h3> SORT</h3> <BR> 
+                        <input type="radio" name="radio2"> Price low to high <br>
+                        <input type="radio" name="radio2"> price high to low <br>
+        
+                    </form>
+        
+                </div>
+                <div class="card-right">
+                    <div class="right-cards">
+                         <div class="right-cards-upper-portion">
+                            <img src="breakfast.jpg" height="115px" width="115px" alt="">   
+                            <span class="big-chill-kakery"> <h2>The Big Chill Cakery</h2></span>
+                            <div class="fort">
+                                FORT
+                            </div>
+                            <div class="address">
+                                Shop 1, Plot D, Samruddhi Complex, Chincholi …
+                            </div> <br> <br>
+                            <hr>
+                            <div class="cusin-cost">
+                                CUISINES <BR>
+                                COST FOR TWO :
+                            </div>
+                            <div class="bakery-cost">
+                                Bakery <BR>
+                                700 
+                            </div>
+                               
+                            
+                         </div>   
+
+                       
+                    </div>
+                    <div class="right-cards">
+                        <div class="right-cards-upper-portion">
+                            <img src="breakfast.jpg" height="115px" width="115px" alt="">
+                            <span  class="bake-shop" > <h2>The Bake Shop</h2></span>
+                            <div class="fort2">
+                                FORT
+                            </div>
+                            <div class="address2">
+                                Shop 1, Plot D, Samruddhi Complex, Chincholi …
+                            </div> <BR></BR> <hr>
+                            <div class="cusin-cost2">
+                                CUISINES <BR>
+                                COST FOR TWO :
+                            </div>
+                            <div class="bakery-cost2">
+                                Bakery <BR>
+                                700 
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="pagination">
+                        <button><</button>
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>4</button>
+                        <button>5</button>
+                        <button>></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
